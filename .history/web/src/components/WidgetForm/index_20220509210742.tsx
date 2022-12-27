@@ -35,7 +35,7 @@ export const feedbackTypes = {
 
 
 /**
- * Tudo isso foi criado, para poder definir quais tipos o useSate estará esperando
+ * Tudo isso foi criado, para poder definir quais tiops o useSate estará esperando
  * Nesse caso, não vai ser string, ou number e sim o FeedbackType
  * Então, o useSate está esperando algo dessa tipagem que eu criei baseado no objeto feedbackTypes
  */
@@ -43,7 +43,7 @@ export const feedbackTypes = {
 export type FeedbackType = keyof typeof feedbackTypes;
 //type - criar um variável que armazena tipos
 //typeof - retorna a tipagem de todos os elementos de feedbackTypes
-//keyof - retorna apenas as chaves do objeto feedbackTypes
+//keyof - retorna apenas as chaves do obejto feedbackTypes
 
 export function WidgetForm() {
 
@@ -65,7 +65,7 @@ export function WidgetForm() {
 
   return (
 
-    //o md:, significa que o componente vai ter aquele estilo para telas do tamanho médio para cima
+    //o md:, signifca que o componente vai ter aquele estilo para telas do tamanho médio para cima
     <div className="bg-zinc-900 p-4 relative rounded-2xl mb-4 flex flex-col items-center shadow-lg w-[calc(100vw-2rem)] md:w-auto">
 
       {feedbackSent ? ( //se o feedback for enviado, vai mostrar a tela de sucesso

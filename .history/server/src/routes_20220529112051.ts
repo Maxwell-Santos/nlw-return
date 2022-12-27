@@ -5,13 +5,15 @@ import express from 'express'
 
 export const routes = express.Router()
 
+
+
 //GET = Buscar informações
 //POST = Cadastrar informações
 //PUT = Atualizar informações
 //PATCH = Atualizar uma informação única de uma entidade
 //DELETE = Deletar uma informação
 
-//como é uma função assíncrona, ou seja, demora um tempo até bater no bd e retornar ao cliente, precisa do async await
+//como é uma função asíncrona, ou seja, demora um tempo até bater no bd e retornar ao cliente, precisa do async await
 
 
 routes.post('/feedbacks', async (req, res)=>{

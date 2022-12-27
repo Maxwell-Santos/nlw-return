@@ -8,8 +8,8 @@ export interface FeedbackCreateData {
 }
 
 export interface FeedbacksRepository {
-  //definir os métodos com que podem ocorrer com o banco de dados
+  //deifinir os métodos com que podem ocorrer com o banco de dados
 
-  //essa função está sendo chamada lá na pasta prisma de dentro do src, ela é uma função assíncrona, ou seja, retorna uma promise (!importante)
+  //essa função está sendo chamada lá na pasta prisma de dentro do src, ela é uma função asíncrona, ou seja, retorna uma promise (!importante)
   create: (data: FeedbackCreateData) => Promise<void>;
 }

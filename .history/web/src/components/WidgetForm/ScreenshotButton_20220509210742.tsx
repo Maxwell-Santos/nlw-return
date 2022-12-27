@@ -15,7 +15,7 @@ export function ScreenshotButton({
 
   const [isTakingScreenshot, setIsTakingScreenshot] = useState(false)
 
-  async function handleTakeScreenshot() {
+  async function handleTakeScreenchot() {
     setIsTakingScreenshot(true)
     //como parâmetro da função, escolho qual elemento quero tirar print 
     //a exclamação '!' serve para dizer que aquele elemento nunca vai ser nulo
@@ -46,7 +46,7 @@ export function ScreenshotButton({
 
   return (
     <button
-    onClick={handleTakeScreenshot}
+    onClick={handleTakeScreenchot}
     type="button"
     className="bg-zinc-800 p-2 rounded-md border-trasparent hover:bg-zinc-700 transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-zinc-900 focus:ring-brand-500"
   >
